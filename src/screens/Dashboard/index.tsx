@@ -1,7 +1,7 @@
 import React from 'react';
 import { HighlightCard } from '../../components/HighlightCard';
 import { TransactionCard, TransactionCardProps } from '../../components/TransactionCard';
-import { Container, Header, Icon, Photo, User, UserGreeting, UserInfo, UserName, UserWrapper,HighlightCards,Transactions, Title, TransactionList } from './styles';
+import { Container, Header,LogoutButton,Icon, Photo, User, UserGreeting, UserInfo, UserName, UserWrapper,HighlightCards,Transactions, Title, TransactionList } from './styles';
 
 export interface DataListProps extends TransactionCardProps{
   id: string
@@ -65,7 +65,9 @@ export function Dashboard(){
               <UserName>Junior Bezerra</UserName>
             </User>
           </UserInfo>
-          <Icon name="power"/>
+          <LogoutButton onPress={()=>{}}>
+            <Icon name="power"/>
+          </LogoutButton>
         </UserWrapper>
       </Header>
       <HighlightCards>

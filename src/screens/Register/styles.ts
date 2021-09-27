@@ -18,4 +18,5 @@ export const TransactionsTypes = styled.View`
   margin-top:8px;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 16px;
 `;
